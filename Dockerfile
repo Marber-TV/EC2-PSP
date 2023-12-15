@@ -19,5 +19,5 @@ RUN docker-php-ext-install gd
 RUN a2enmod rewrite
 
 RUN apt-get update && apt-get install -y git
-RUN cd /var/www/html && git clone https://github.com/Marber-TV/EC2-PSP
-RUN cp -R /var/www/html/Noticias/* /var/www/html/
+RUN cd /var/www/ && git clone https://github.com/Marber-TV/EC2-PSP
+RUN cp -R /var/www/EC2-PSP/* /var/www/html/
